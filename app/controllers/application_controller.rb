@@ -12,6 +12,10 @@ class ApplicationController < Sinatra::Base
   get '/' do 
     erb :index
   end
+  
+  get '/results' do 
+    erb :results
+  end
 
   post '/results' do 
   	@quiz1 = Quiz.new(params[:q1],params[:q2],params[:q3],params[:q4],params[:q5])
