@@ -1,6 +1,6 @@
 class Quiz
 attr_accessor :q1,:q2,:q3,:q4,:q5
-$score = 0
+
 def initialize (q1,q2,q3,q4,q5)
    @q1 = q1
    @q3 = q3
@@ -10,6 +10,7 @@ def initialize (q1,q2,q3,q4,q5)
    @q6 = q6
 end
 def score
+    $score = 0
 if @q1 == "12"
  $score += 1
 end
